@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      text-align: center;
+    }
+
+    label {
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    select {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<form action="http://localhost/document_generator/insert.php" method="post"> <!-- Replace your_processing_script.php with the actual processing script -->
+  <label for="selectOption">Select an option:</label>
+  <select id="selectOption" name="selectOption">
+    <optgroup label="Internship">
+      <option value="internship_offer">Offer Letter</option>
+      <option value="internship_experience">Experience</option>
+    </optgroup>
+    <optgroup label="Workshop">
+      <option value="workshop_offer">Offer Letter</option>
+      <option value="workshop_experience">Experience</option>
+    </optgroup>
+    <optgroup label="Training">
+      <option value="training_offer">Offer Letter</option>
+      <option value="training_experience">Experience</option>
+    </optgroup>
+  </select>
+
+  <br>
+
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
